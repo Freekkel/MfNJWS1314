@@ -16,6 +16,7 @@
 \usepackage{latexsym}
 \usepackage{longtable}
 \usepackage{latexsym}
+\usepackage{paralist}
 \usepackage{enumitem}
 \usepackage{pstricks}
 \usepackage{stmaryrd}
@@ -24,6 +25,14 @@
 \usepackage{linearb}
 \usepackage{titlesec}
 \usepackage{listings}
+\usepackage{xcolor}
+\usepackage{xspace} 
+\usepackage{scrjura} 
+\usepackage{scrkbase}
+\usepackage{hyperref} 
+
+\useshorthands{'}
+\defineshorthand{'S}{\Sentence\ignorespaces} 
 
 
 %Mehr Raum zwischen subsections
@@ -47,8 +56,12 @@
 	\input{front/title} 
 	
 	\frontmatter 
+		\input{frontmatter/preface}
 		\input{frontmatter/table_of_contents} 
 	 
 	\mainmatter 
-		\input{mainmatter/vorlesung}
+		\input{mainmatter/allgemein}
+		\input{mainmatter/meinungs_pressefreiheit}
+	\backmatter
+		\input{backmatter/listoffigures} 
 \end {document}
