@@ -30,7 +30,12 @@
 \usepackage{scrjura} 
 \usepackage{scrkbase}
 \usepackage{hyperref} 
+\usepackage{enumitem}
 
+%Für Arrow listen
+\newlist{arrowlist}{itemize}{1}
+\setlist[arrowlist]{label=$\rightarrow$}
+%Für Satz bei scrjura
 \useshorthands{'}
 \defineshorthand{'S}{\Sentence\ignorespaces} 
 
